@@ -66,11 +66,18 @@ const magic = [1, 2, 3].map(x => fib(x));
 </textarea>
     <div class="slab-verdict" id="chalkVerdict" aria-live="polite"></div>
   </div>
-  <div class="chalk-samples">
-    <span>paste a ghost:</span>
-    <button class="chalk-sample" data-k="good">a clean function</button>
-    <button class="chalk-sample" data-k="oops">a missing brace</button>
-    <button class="chalk-sample" data-k="typo">a stray typo</button>
+  <div class="chalk-actions">
+    <button class="chalk-run" id="chalkRun">▶ run it</button>
+    <span class="chalk-samples">
+      <span>paste a ghost:</span>
+      <button class="chalk-sample" data-k="good">a clean function</button>
+      <button class="chalk-sample" data-k="oops">a missing brace</button>
+      <button class="chalk-sample" data-k="typo">a stray typo</button>
+    </span>
+  </div>
+  <div class="slab-output" id="chalkOutput" hidden>
+    <div class="out-head"><span class="out-label">stdout</span><button class="out-clear" id="chalkOutClear">clear</button></div>
+    <pre class="out-body" id="chalkOutBody"></pre>
   </div>
 </section>
 
