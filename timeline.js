@@ -1,6 +1,7 @@
 // Dev tooling timeline: 1996 → today. Curated, opinionated.
 // cat = language | editor | vcs | web | infra | ai | build | database
 window.TIMELINE = [
+  { year: 1985, name: "GNU Emacs", cat: "editor", note: "Not an editor — an operating system that forgot to include a good editor. M-x everything. You could read mail, play Tetris, and psychoanalyze yourself without ever leaving it.", epitaph: "eternal, pinky-finger permitting" },
   { year: 1987, name: "Perl", cat: "language", note: "The duct tape of the internet. If you knew Perl, you could do anything — and nobody else could read it.", epitaph: "still alive, still unreadable" },
   { year: 1991, name: "Python", cat: "language", note: "Readable code as a feature. Heresy at the time. It won.", epitaph: "ascendant" },
   { year: 1991, name: "Linux", cat: "infra", note: "A kid in Finland posts to a newsgroup. The whole industry quietly reorganizes around it.", epitaph: "runs everything" },
@@ -9,6 +10,7 @@ window.TIMELINE = [
   { year: 1995, name: "Apache httpd", cat: "web", note: "'A patchy' web server. Ran most of the web for a decade.", epitaph: "semi-retired" },
   { year: 1995, name: "PHP", cat: "language", note: "Personal Home Page tools. Shipped more of the web than anyone wants to admit.", epitaph: "still shipping" },
   { year: 1995, name: "JavaScript", cat: "language", note: "Written in 10 days. Regretted for 30 years. Runs the planet.", epitaph: "inescapable" },
+  { year: 1995, name: "Java", cat: "language", note: "Write once, debug everywhere. AbstractSingletonProxyFactoryBean was a real class someone shipped. It paid a generation's mortgages and still runs your bank.", epitaph: "immortal, enterprise-grade" },
   { year: 1995, name: "Ruby", cat: "language", note: "Optimized for developer happiness. Remember happiness?", epitaph: "niche but loved" },
   { year: 1995, name: "CVS", cat: "vcs", note: "Version control that could corrupt itself if you looked at it funny.", epitaph: "dead" },
   { year: 1996, name: "vim", cat: "editor", note: "You still can't quit it. :q! won't save you here.", epitaph: "eternal" },

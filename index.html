@@ -47,6 +47,33 @@
   </article>
 </section>
 
+<section id="chalk" class="chalk-section">
+  <div class="chalk-head">
+    <h2>The Sidewalk <span class="subtle">// scribble code, see if it holds</span></h2>
+    <p class="chalk-intro">Before the agents, this was the whole thrill: you typed something into a blank space and the machine told you, bluntly, whether it made sense. No autocomplete whispering the answer. Just you, the cursor, and the compiler's verdict. Write some JavaScript below — it compiles live, right here in your browser's own engine. Like a kid with sidewalk chalk, checking if the hopscotch lines are straight.</p>
+  </div>
+  <div class="slab">
+    <div class="slab-tray">
+      <span class="chalk-dot c1"></span><span class="chalk-dot c2"></span><span class="chalk-dot c3"></span>
+      <span class="slab-label">chalk.js — drrraw it out</span>
+    </div>
+    <textarea id="chalkInput" spellcheck="false" autocomplete="off" autocapitalize="off">// try it. break it. erase it. try again.
+function fib(n) {
+  return n < 2 ? n : fib(n - 1) + fib(n - 2);
+}
+
+const magic = [1, 2, 3].map(x => fib(x));
+</textarea>
+    <div class="slab-verdict" id="chalkVerdict" aria-live="polite"></div>
+  </div>
+  <div class="chalk-samples">
+    <span>paste a ghost:</span>
+    <button class="chalk-sample" data-k="good">a clean function</button>
+    <button class="chalk-sample" data-k="oops">a missing brace</button>
+    <button class="chalk-sample" data-k="typo">a stray typo</button>
+  </div>
+</section>
+
 <section id="timeline" class="timeline-section">
   <div class="timeline-head">
     <h2>The Graveyard <span class="subtle">// a searchable timeline, 1987 → now</span></h2>
@@ -63,11 +90,12 @@
 
 <footer>
   <div class="prompt-line small"><span class="green">visitor@deprecated</span>:<span class="blue">~</span>$ sudo shutdown -h now</div>
-  <p>deprecated.engineer — a Stern Anchor memento mori. Built in one shot, which is also rather the point.</p>
+  <p>deprecated.engineer — a Stern Anchor memento mori. Written mostly by a machine, and still being tended by one.</p>
   <p class="tiny">No tracking. No newsletter. No "book a demo." Just the quiet.</p>
 </footer>
 
 <script src="timeline.js"></script>
+<script src="chalk.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
