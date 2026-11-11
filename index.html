@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>deprecated.engineer — on the quiet death of a craft</title>
+<meta name="description" content="Software engineering used to feel like magic. An essay and an interactive timeline of the tools we loved, from Perl in '96 to the AI agents writing this sentence." />
+<meta property="og:title" content="deprecated.engineer" />
+<meta property="og:description" content="On how software engineering lost its appeal — and a searchable graveyard of the tools we grew up on." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%E2%9A%B0%EF%B8%8F</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="prompt-line"><span class="green">visitor@deprecated</span>:<span class="blue">~</span>$ <span class="typed" id="typed"></span><span class="cursor">█</span></div>
+  <h1>deprecated<span class="dot">.</span>engineer</h1>
+  <p class="tagline">On the quiet death of a craft — and the tools we loved on the way down.</p>
+  <div class="hero-meta">
+    <span>EST. 1996</span><span class="sep">•</span><span>DISPLACED 2026</span><span class="sep">•</span><span id="toolcount">— tools archived</span>
+  </div>
+  <a href="#essay" class="scroll-hint">read the eulogy ↓</a>
+</header>
+
+<main>
+<section id="essay" class="essay">
+  <article>
+    <h2>We used to build cathedrals by hand.</h2>
+    <p>There was a time — and if you're old enough you feel it in your spine — when writing software was a <em>craft</em>. You opened a blank file. The cursor blinked at you, patient and a little cruel. And everything that happened next came out of your head.</p>
+    <p>You learned <strong>Perl</strong> because someone had to, and the regex you wrote at 2am felt like casting a spell. You FTP'd files straight to production because that was the pipeline. You knew your stack down to the syscall. When something broke, you fixed it with your hands and your brain and a terminal, and the fixing <em>felt like something</em>.</p>
+    <p>The money wasn't the point, though the money was good. The point was that you could <em>make a machine do a thing</em>, and almost nobody else on earth could, and that made you a kind of wizard. Scarcity of skill. Depth of mastery. A guild.</p>
+
+    <h2>Then the industry optimized the magic out of it.</h2>
+    <p>First came the frameworks that did your thinking. Then the bootcamps that minted a hundred thousand of you a year. Then the interviews that tested whether you'd memorized the same forty LeetCode problems as everyone else. Then the layoffs — round after round — that reframed "engineer" from <em>artisan</em> to <em>line item</em>.</p>
+    <p>And then, in November 2022, a chatbot wrote a working function from a sentence, and something load-bearing quietly cracked.</p>
+    <p>Now the agent opens the pull request. You review the diff. You describe the feature in English and babysit a model while it types faster than you ever could. The thing you spent ten thousand hours getting good at is now a commodity API call, billed per million tokens. The cathedral prints itself.</p>
+
+    <h2>This isn't a complaint. It's a wake.</h2>
+    <p>Maybe it's progress. Probably it's progress. The work gets done, the features ship, the users don't care how the sausage compiles. But something real is being lost in the trade, and it deserves more than a shrug — it deserves to be <em>remembered</em>.</p>
+    <p>So we built a graveyard. Every tool below was, at some point, someone's whole world. Search it. Filter it. Find the first editor you ever loved, the version control system that ruined your week, the language that paid your rent. Pour one out.</p>
+    <p class="signoff">— written mostly by a machine, which is rather the point.</p>
+  </article>
+</section>
+
+<section id="timeline" class="timeline-section">
+  <div class="timeline-head">
+    <h2>The Graveyard <span class="subtle">// a searchable timeline, 1987 → now</span></h2>
+    <div class="controls">
+      <input type="search" id="search" placeholder="search the dead… (try 'perl', 'version control', 'ai')" autocomplete="off" />
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="result-meta" id="resultMeta"></div>
+  </div>
+  <div class="timeline" id="timelineList"></div>
+  <p class="empty" id="emptyState" hidden>Nothing here. Even the ghosts moved on. <button id="clearBtn">clear search</button></p>
+</section>
+</main>
+
+<footer>
+  <div class="prompt-line small"><span class="green">visitor@deprecated</span>:<span class="blue">~</span>$ sudo shutdown -h now</div>
+  <p>deprecated.engineer — a Stern Anchor memento mori. Built in one shot, which is also rather the point.</p>
+  <p class="tiny">No tracking. No newsletter. No "book a demo." Just the quiet.</p>
+</footer>
+
+<script src="timeline.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
