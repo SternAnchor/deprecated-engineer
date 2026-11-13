@@ -23,7 +23,7 @@ body{
 /* HERO */
 .hero{max-width:860px;margin:0 auto;padding:12vh 24px 9vh;text-align:left}
 .hero .typed{color:var(--ink)}
-.hero h1{font-size:clamp(3rem,10vw,7rem);font-weight:900;letter-spacing:-.04em;line-height:.95;margin:.3em 0 .1em}
+.hero h1{font-size:clamp(2.2rem,11vw,7rem);font-weight:900;letter-spacing:-.04em;line-height:.95;margin:.3em 0 .1em;overflow-wrap:break-word;word-break:break-word}
 .hero h1 .dot{color:var(--amber)}
 .tagline{font-size:clamp(1.1rem,2.6vw,1.5rem);color:var(--ink-dim);max-width:38ch;font-weight:400}
 .hero-meta{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.14em;color:var(--ink-dim);margin-top:2.4em;text-transform:uppercase}
